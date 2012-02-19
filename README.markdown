@@ -71,6 +71,9 @@ Update the document in the database at `uri` with `doc`. `doc` should have an
 `_id` field at the very least. The `_rev` field will be fetched from the latest
 revision and used to blindly update the document.
 
+To use http basic auth just format `uri` like this:
+`"http://user:pass@host:port/dbname"`.
+
 Return a stream with the server response or `"# not updated\n"` if the document
 didn't change.
 
