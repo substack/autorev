@@ -1,0 +1,40 @@
+{
+    "name" : "autorev",
+    "description" : "blindly update couchdb documents",
+    "version" : "0.0.0",
+    "repository" : {
+        "type" : "git",
+        "url" : "git://github.com/substack/autorev.git"
+    },
+    "main" : "index.js",
+    "bin" : {
+        "autorev" : "bin/autorev.js"
+    },
+    "keywords" : [
+        "couchdb",
+        "_rev",
+        "_id",
+        "ddoc",
+        "design",
+        "document"
+    ],
+    "directories" : {
+        "lib" : ".",
+        "example" : "example",
+        "test" : "test"
+    },
+    "dependencies" : {
+        "request" : "2.9.x",
+        "deep-equal" : "0.0.x",
+        "traverse" : "0.5.x"
+    },
+    "engines" : {
+        "node" : ">=0.4.0"
+    },
+    "license" : "MIT",
+    "author" : {
+        "name" : "James Halliday",
+        "email" : "mail@substack.net",
+        "url" : "http://substack.net"
+    }
+}
